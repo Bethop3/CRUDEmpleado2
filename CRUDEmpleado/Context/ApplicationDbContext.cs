@@ -13,7 +13,7 @@ namespace CRUDEmpleado.Context
         protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
         {
             //Aquí va la cadena de conexión
-            optionsBuilder.UseMySQL("server=localhost; database=23BM; user=root; password=1234");
+            optionsBuilder.UseMySQL("Server=localhost;port=3306;User ID=root; Database=Empleados23BM");
         }
 
         public DbSet<Empleado> Empleados { get; set; }

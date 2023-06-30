@@ -5,8 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CRUDEmpleado"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="400">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/8-tips-tiendas-ropa-001.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Label Content="Empleado" HorizontalAlignment="Left" Height="36" Margin="108,25,0,0" VerticalAlignment="Top" Width="172" HorizontalContentAlignment="Center" FontSize="22" FontWeight="Bold" FontStyle="Italic" FontFamily="ItalicC" Background="White"/>
+        <Label Content="Nombre: " HorizontalAlignment="Left" Height="31" Margin="33,79,0,0" VerticalAlignment="Top" Width="77" HorizontalContentAlignment="Center" FontSize="16" FontStyle="Italic" Background="White"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="31" Margin="110,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
+        <Label Content="Apellidos:" HorizontalAlignment="Left" Height="30" Margin="33,132,0,0" VerticalAlignment="Top" Width="77" HorizontalContentAlignment="Center" FontSize="16" FontStyle="Italic" Background="White"/>
+        <TextBox x:Name="txtApellidos" HorizontalAlignment="Left" Height="30" Margin="110,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
+        <Label Content="Correo:" HorizontalAlignment="Left" Height="30" Margin="33,182,0,0" VerticalAlignment="Top" Width="77" HorizontalContentAlignment="Center" FontSize="16" FontStyle="Italic" Background="White"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Height="30" Margin="110,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
+        <Label Content="Fecha:" HorizontalAlignment="Left" Height="30" Margin="33,232,0,0" VerticalAlignment="Top" Width="77" HorizontalContentAlignment="Center" FontSize="16" FontStyle="Italic" Background="White"/>
+        <TextBox x:Name="txtFecha" HorizontalAlignment="Left" Height="30" Margin="108,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
+        <Label Content="ID :" HorizontalAlignment="Left" Height="30" Margin="33,0,0,0" VerticalAlignment="Center" Width="77" HorizontalContentAlignment="Center" FontSize="16" FontStyle="Italic" Background="White"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="30" Margin="108,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="248"/>
+        <Button Content="Ver" Style="{StaticResource RoundButtonStyle}" HorizontalAlignment="Left" Height="39" Margin="72,346,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF00EDFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name ="BtnAdd" Content="Agregar" Style="{StaticResource RoundButtonStyle}" HorizontalAlignment="Left" Height="39" Margin="234,346,0,0" VerticalAlignment="Top" Width="96" Click="BtnAdd_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF00FF04" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Editar" Style="{StaticResource RoundButtonStyle}" HorizontalAlignment="Left" Height="36" Margin="72,443,0,0" VerticalAlignment="Top" Width="96">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFDFF00" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Eliminar" Style="{StaticResource RoundButtonStyle}" HorizontalAlignment="Left" Height="36" Margin="234,443,0,0" VerticalAlignment="Top" Width="96">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

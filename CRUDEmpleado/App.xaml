@@ -4,6 +4,27 @@
              xmlns:local="clr-namespace:CRUDEmpleado"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="RoundButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FF2ECC71"/>
+            <!-- Color de fondo personalizado -->
+            <Setter Property="Foreground" Value="White"/>
+            <!-- Color de fuente personalizado -->
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>
